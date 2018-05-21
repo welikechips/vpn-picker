@@ -4,6 +4,6 @@ Type=Application
 Terminal=true
 Icon[en_US]=gnome-panel-launcher
 Name[en_US]=VPN
-Exec=/root/openvpn/openvpn.sh
+Exec=/root/vpn-picker/vpn-picker.sh
 Name=VPN
 Icon=gnome-panel-launcher
