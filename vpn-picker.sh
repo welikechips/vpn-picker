@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /root/openvpn
+cd /root/vpn-picker
 
 declare -a opt_name=()
 declare -A opt_file=()
