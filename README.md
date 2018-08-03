@@ -4,7 +4,8 @@
 
 In Kali Linux OVPN is a little harder to use. So we created a script to pick from the .ovpn files in a directory
 
-1. ``cd /root/vpn-picker``
+1. ``cd && git clone https://github.com/tnory56/vpn-picker/``
+1. ``cd ~/vpn-picker``
 1. ``wget https://www.privateinternetaccess.com/openvpn/openvpn.zip``
 1. ``unzip openvpn.zip -d ovpn-files``
 1. ``cd ovpn-files``
@@ -15,3 +16,4 @@ In Kali Linux OVPN is a little harder to use. So we created a script to pick fro
 1. Run ``php tools/addcreds.php`` to replace the necessary .ovpn files with proper data.
 1. ``chmod +x ./vpn-picker.sh``
 1. Copy ``vpn.desktop`` to desktop for use.
+1. ``ln -s ~/vpn-picker/vpn-picker.sh vpnpicker`` 
