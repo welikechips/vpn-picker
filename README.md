@@ -4,16 +4,17 @@
 
 In Kali Linux OVPN is a little harder to use. So we created a script to pick from the .ovpn files in a directory
 
-1. ``cd && git clone https://github.com/tnory56/vpn-picker/``
-1. ``cd ~/vpn-picker``
-1. ``wget https://www.privateinternetaccess.com/openvpn/openvpn.zip``
-1. ``unzip openvpn.zip -d ovpn-files``
-1. ``cd ovpn-files``
-1. ``mv ca.rsa.2048.crt ../``
-1. ``mv crl.rsa.2048.pem ../``
-1. ``cd ../`` 
-1. Replace ``#USERNAME#`` and ``#PASSWORD#`` in ``credentials.txt`` with your privateinternetaccess.com acct credentials (Username/Password on separate lines).
-1. Run ``php tools/addcreds.php`` to replace the necessary .ovpn files with proper data.
-1. ``chmod +x ./vpn-picker.sh``
-1. Copy ``vpn.desktop`` to desktop for use.
-1. ``ln -s ~/vpn-picker/vpn-picker.sh /usr/local/bin/vpnpicker`` 
+```cd && git clone https://github.com/tnory56/vpn-picker/
+cd ~/vpn-picker
+wget https://www.privateinternetaccess.com/openvpn/openvpn.zip
+unzip openvpn.zip -d ovpn-files
+cd ovpn-files
+mv ca.rsa.2048.crt ../
+mv crl.rsa.2048.pem ../
+cd ../ 
+#Replace #USERNAME# and #PASSWORD# in credentials.txt with your privateinternetaccess.com acct credentials (Username/Password on separate lines).
+php tools/addcreds.php
+chmod +x ./vpn-picker.sh
+#Copy vpn.desktop to desktop for use.
+ln -s ~/vpn-picker/vpn-picker.sh /usr/local/bin/vpnpicker
+```
