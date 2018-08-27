@@ -9,4 +9,4 @@ cd ../
 php tools/addcreds.php
 chmod +x ./vpn-picker.sh
 #Copy vpn.desktop to desktop for use.
-ln -s ./vpn-picker.sh /usr/local/bin/vpnpicker
+ln -s ~/tools/vpn-picker/vpn-picker.sh /usr/local/bin/vpnpicker
