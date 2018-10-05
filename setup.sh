@@ -7,6 +7,6 @@ mv crl.rsa.2048.pem ../
 cd ../ 
 #Replace #USERNAME# and #PASSWORD# in credentials.txt with your privateinternetaccess.com acct credentials (Username/Password on separate lines).
 php tools/addcreds.php
-chmod +x ./vpn-picker.sh
+sudo chmod +x ./vpn-picker.sh
 #Copy vpn.desktop to desktop for use.
-ln -s ~/tools/vpn-picker/vpn-picker.sh /usr/local/bin/vpnpicker
+sudo ln -s ~/tools/vpn-picker/vpn-picker.sh /usr/local/bin/vpnpicker
