@@ -1,6 +1,6 @@
 <?php
 
-$files = glob(dirname(__DIR__) . '/ovpn-files/*.ovpn');
+$files = glob(dirname(__DIR__) . '/ovpn-files/*');
 
 foreach ($files as $file) {
     $textToReplace = 'auth-user-pass';
